@@ -1,0 +1,58 @@
+
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Assignment-3</title>
+</head>
+
+<body>
+    <table border="0">
+        <tbody>
+            <form name="formToAddProject" action="">
+                
+                <tr>
+                    <td><label>Project Name</label></td>
+                    <td> <input type="text" id="pName" placeholder="Project Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Description</label></td>
+                    <td> <input type="text" id="description" placeholder="Project Description"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><label>Status</label></td>
+                    <td> <input type="text" id="status" placeholder="Status"></td>
+                </tr>
+                <td></td>
+                <td><input id="saveProject" type="button" onclick="handler.addProject(this.form)" value="Save"></input></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td> <input id="dispalyProjectListButton" type="button" onclick="base.initializeProjectList()" value="Show Project List"></input> </td>
+            
+        </tr>
+        <tr>
+            <td><input id="checkProjectListSizeButton" type="button" onclick="base.checkProjectListSize()" value="Verify"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>Project List and number of rows in table: </td>
+            <td><span id="message"></span></input>
+            </td>
+        </tr>
+    </table>
+    <table id="projectList" border="1">
+
+    </table>
+
+    <script src="js/index.js"></script>
+    <script src="js/myconsole.js"></script>
+</body>
+
+</html>
+
